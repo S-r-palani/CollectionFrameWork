@@ -1,0 +1,67 @@
+Vector class:
+
+	1.it will follow all the rules of list interface
+	2.all methods and implementation of collection and list will be implemented by the vector class
+	3.duplicate values are allowed
+	4.more null values are added
+	5.insertion order is mainatained
+	6.index value is maintained,elements are stored by the basics of index values
+	7.it doesnot follow sorting order
+	8.it allows heterogeneous elements are stored...
+	
+1.vector class is synchronised
+2.only one thread is run at an time
+3.thread safe
+4.performance will be low
+5.sequential operation is performed
+
+
+methods in vector class:
+
+	1.public void addElement(object o)
+	2.public object firstElement()
+	3.public object lastElement()
+	4.pubic object elementAt(int index)
+	5.public void removeElement(int index)
+	6.public boolean removeElement(objecto)
+	7.public void removeAllElements()
+
+
+
+
+
+
+
+
+
+
+package com.palani;
+
+import java.util.Vector;
+
+public class VectorClassMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vector v=new Vector();
+		System.out.println(v.isEmpty());// true
+		System.out.println(v.capacity());// 10
+		v.addElement("palani");
+		v.addElement("ravi");
+		v.addElement("manonmani");
+		v.addElement("pandukumar");
+		System.out.println(v);//[palani,ravi,manonmani,pandukumar]
+		
+		System.out.println(v.firstElement());// palani
+		System.out.println(v.lastElement());// pandukumar
+		
+		System.out.println(v.elementAt(0));// palani
+		v.removeElement("palani");// will remove only the particular element
+		System.out.println(v);
+		
+		v.removeAllElements();// will clear all the elements
+		System.out.println(v);
+
+	}
+
+}
